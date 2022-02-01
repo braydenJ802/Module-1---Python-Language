@@ -31,13 +31,11 @@ if __name__== "__main__":
 
 
 print("\n\nStarting ...")
-print("3")
-time.sleep(1)
-print("2")
-time.sleep(1)
-print("1")
-time.sleep(1)
+for count in range(3, 0, -1):  #count down -> 3, 2, 1 
+    print(count)
+    time.sleep(1)
 print("Go!\n")
+
 for n in threads:
     n.start()
 for j in threads:
