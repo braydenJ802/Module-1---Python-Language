@@ -4,7 +4,7 @@ import random
 
 class AnimalRaceManager (threading.Thread):
     """This is a class which represents a fictional race between a group of animals. 
-    Every animal is represented by a thread object, and order of execution is determined by the speed of the animals."""
+    Every animal's positon in the race is represented by a thread object, and order of execution is determined by the speed of the animals."""
     
     def __init__(self, position, animal_type):
         """Initializes our AnimalRaceManager class."""
@@ -12,9 +12,7 @@ class AnimalRaceManager (threading.Thread):
         
         self.position = position
         self.animal_type = animal_type
-
-        
-        
+  
         
     def run(self):
         """Runs our program. Executes threads."""
@@ -26,7 +24,7 @@ class AnimalRaceManager (threading.Thread):
 
 class Animal():
     """This class represents real-world animals who all have varying speeds. The individual speed of each animal has a chance of
-    being slower.
+    being lower.
     This is a parent class of a subset of animal classes. """
 
     #Initialize our animal
