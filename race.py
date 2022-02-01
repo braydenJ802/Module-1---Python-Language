@@ -22,7 +22,7 @@ if __name__== "__main__":
     position = 1
     threads = []
     for key, val in sorted_animal_dict:
-        animal_dict[key] = [val + [position]] #add position values to dict
+        animal_dict[key] = val + [position] #add position values to dict
         
         #instantiate threads! 
         threads.append(racing_animals.AnimalRaceManager(position, key))
@@ -44,5 +44,5 @@ for j in threads:
     j.join()
 
 
-print(f"\nAnimal details (\"Animal\": \"speed\", \"three_limbed: true or false\", \"starting position in race\"):\n {animal_dict}")
+print(f"\nAnimal details - (Animal: \"speed\", \"three_limbed: true or false\", \"starting position in race\"):\n {animal_dict}")
 
