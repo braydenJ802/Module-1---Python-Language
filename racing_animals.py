@@ -2,6 +2,7 @@ import time
 import threading
 import random
 
+
 class AnimalRaceManager (threading.Thread):
     """This is a class which represents a fictional race between a group of animals. 
     Every animal's positon in the race is represented by a thread object, and order of execution is determined by the speed of the animals."""

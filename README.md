@@ -6,11 +6,13 @@ This program represents a small fictional race between a group of animals. It us
 Every animal object contains a set speed characteristic that determines their starting position in the race. Those positions are then used to determine which threads
 execute first, or the order of execution. A thread represents an animal's place in the race, and/or the animal's chance at winning the race.
 
-My hope in writing this software was to get started with using threading. I used the sleep function from the time module to cause the threads to progressively execute more slowly, thus giving a more accurate representation of a race.
+My hope in writing this software was to get started with using threading. I used the sleep function from the time module to cause the threads to progressively execute more slowly, thus giving a more accurate representation of a race, where the animals are slower and slower.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+Feel free to click through this video if you would like, as it is a bit long:
+
+[Software Demo Video](https://youtu.be/9JNOW0TMqAs)
+
 
 # Development Environment
 ### Tools

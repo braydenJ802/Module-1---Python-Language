@@ -15,7 +15,7 @@ if __name__== "__main__":
     
     animal_dict = {}
     for anim in anim_objects:
-        animal_dict[anim.animal_type] = [anim.speed, anim.three_limbed] #create dict -> {"Aniaml name": "[Speed, three_limbed: True or False]"}
+        animal_dict[anim.animal_type] = [anim.speed, anim.three_limbed] #create dict -> {"Animal name": "[Speed, three_limbed: True or False]"}
    
     #animals enter the race 
     sorted_animal_dict = sorted(animal_dict.items(), key=lambda x: x[1], reverse=True) #sort dict by speed, descending order
